@@ -1,6 +1,6 @@
 <template>
-    <div class="item_frame" id="variant2">
-        <div id="frame3">
+    <div class="item_frame variant2">
+        <div class="frame3">
             <h1>Redirection sur Vinted</h1>
             <div class="lds-spinner">
                 <div></div>
@@ -19,11 +19,11 @@
         </div>
     </div>
     <div class="item_frame" @click="variantChange(item.link)" :style="'background: linear-gradient(180deg, rgba(0, 0, 0, 0) 42.91%, #000000 118.2%), url(' + item.imageUrl + ') center'">
-        <div id="texts">
-            <div id="upper_part">
+        <div class="texts">
+            <div class="upper_part">
                 <h1 class="clothing_name">{{ item.name }}</h1>
-                <div id="frame1">
-                    <p id="clothing_size">{{ item.size }}</p>
+                <div class="frame1">
+                    <p class="clothing_size">{{ item.size }}</p>
                     <svg width="5" height="10" viewBox="0 0 5 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M3.28125 7.8125C3.19492 7.8125 3.125 7.74957 3.125 7.67188V7.39062C3.125 7.31293 3.19492 7.25 3.28125 7.25H5V6.125H3.28125C3.19492 6.125 3.125 6.06207 3.125 5.98438V5.70312C3.125 5.62543 3.19492 5.5625 3.28125 5.5625H5V4.4375H3.28125C3.19492 4.4375 3.125 4.37457 3.125 4.29688V4.01562C3.125 3.93793 3.19492 3.875 3.28125 3.875H5V2.75H3.28125C3.19492 2.75 3.125 2.68707 3.125 2.60938V2.32812C3.125 2.25043 3.19492 2.1875 3.28125 2.1875H5V1.0625C5 0.751895 4.72012 0.5 4.375 0.5H0.625C0.279883 0.5 0 0.751895 0 1.0625V8.9375C0 9.24811 0.279883 9.5 0.625 9.5H4.375C4.72012 9.5 5 9.24811 5 8.9375V7.8125H3.28125Z"
@@ -31,13 +31,29 @@
                     </svg>
                 </div>
             </div>
-            <div id="frame2">
-                <p id="clothing_brand">{{ item.brand }}</p>
-                <p id="clothing_price">{{ item.price }}</p>
+            <div class="frame2">
+                <p class="clothing_brand">{{ item.brand }}</p>
+                <p class="clothing_price">{{ item.price }}</p>
             </div>
         </div>
     </div>
 </template>
+
+/*
+<div class="items_scroll">
+<ul class="scrolling">
+    <item_frame class="item" :item='{
+            name: "Hoodie Zip Violet",
+            size: "M",
+            price: "20,00 €",
+            brand: "CARHARTT",
+            link: "https://www.vinted.fr/hommes/vetements/sweats-and-pulls/pulls-a-capuche-avec-zip/1743748226-sweat-zip-carahartt",
+            imageUrl: "https://images1.vinted.net/t/03_0256f_8WeQmpNc3Ar5ATnLMcnRTtg7/f800/1649507870.jpeg?s=b1616fd9df9a9eef397c8458c71981e886927448"
+        }'></item_frame>
+</ul>
+</div>
+*/
+
 
 <script>
 export default {
@@ -73,14 +89,14 @@ export default {
     display: block;
 }
 
-#texts {
+.texts {
     padding: 300px 20px 40px 20px;
     width: 220px;
     height: 80px;
     margin: 0;
 }
 
-#upper_part{
+.upper_part{
     display: flex;
     flex-direction: row;
     padding-bottom: 5px;
@@ -99,7 +115,7 @@ export default {
     margin: 0;
 }
 
-#frame1 {
+.frame1 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -113,7 +129,7 @@ export default {
 
 }
 
-#clothing_size {
+.clothing_size {
     width: 12px;
     height: 16px;
 
@@ -133,7 +149,7 @@ export default {
     margin: 0;
 }
 
-#frame1 svg {
+.frame1 svg {
     width: 5px;
     height: 9px;
 
@@ -143,7 +159,7 @@ export default {
     padding-bottom: 2px;
 }
 
-#frame2 {
+.frame2 {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -155,7 +171,7 @@ export default {
 
 }
 
-#clothing_brand {
+.clothing_brand {
     margin: 0;
     width: fit-content;
     height: 17px;
@@ -173,7 +189,7 @@ export default {
     flex-grow: 0;
 }
 
-#clothing_price {
+.clothing_price {
     margin: 0 0 0 auto;
     height: 17px;
 
@@ -195,12 +211,12 @@ export default {
 
 
 
-#variant2 {
+.variant2 {
     background: #80C5F8;
     display: none;
 }
 
-#frame3 {
+.frame3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,7 +227,7 @@ export default {
     gap: 30px;
 }
 
-#frame3 h1 {
+.frame3 h1 {
     width: 210px;
     height: 60px;
     padding: 0;
@@ -231,7 +247,7 @@ export default {
     flex-grow: 0
 }
 
-#frame3 svg {
+.frame3 svg {
     width: 48px;
     height: 48px;
 

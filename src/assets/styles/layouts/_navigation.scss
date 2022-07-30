@@ -1,0 +1,8 @@
+@import "../helpers/_mixins.scss";
+@import "../helpers/_variables.scss";
+
+.nav_menu {
+  @include content_box($width: 100%, $height: 25px, $padding: 0, $direction: row);
+  justify-content: space-between;
+  align-items: center;
+}

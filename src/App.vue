@@ -1,65 +1,27 @@
 <template>
-    <div class="sticky">
-        <header_bloc></header_bloc>
-        <articles_banner></articles_banner>
-    </div>
-    <div id="items_scroll">
-        <ul class="scrolling">
-            <item_frame class="item" :item='{
-            name: "Hoodie Zip Violet",
-            size: "M",
-            price: "20,00 €",
-            brand: "CARHARTT",
-            link: "https://www.vinted.fr/hommes/vetements/sweats-and-pulls/pulls-a-capuche-avec-zip/1743748226-sweat-zip-carahartt",
-            imageUrl: "https://images1.vinted.net/t/03_0256f_8WeQmpNc3Ar5ATnLMcnRTtg7/f800/1649507870.jpeg?s=b1616fd9df9a9eef397c8458c71981e886927448"
-        }'></item_frame>
-            <item_frame class="item" :item='{
-            name: "Hoodie Zip Violet",
-            size: "M",
-            price: "20,00 €",
-            brand: "CARHARTT",
-            link: "https://www.vinted.fr/hommes/vetements/sweats-and-pulls/pulls-a-capuche-avec-zip/1743748226-sweat-zip-carahartt",
-            imageUrl: "https://images1.vinted.net/t/03_0256f_8WeQmpNc3Ar5ATnLMcnRTtg7/f800/1649507870.jpeg?s=b1616fd9df9a9eef397c8458c71981e886927448"
-        }'></item_frame>
-            <item_frame class="item" :item='{
-            name: "Hoodie Zip Violet",
-            size: "M",
-            price: "20,00 €",
-            brand: "CARHARTT",
-            link: "https://www.vinted.fr/hommes/vetements/sweats-and-pulls/pulls-a-capuche-avec-zip/1743748226-sweat-zip-carahartt",
-            imageUrl: "https://images1.vinted.net/t/03_0256f_8WeQmpNc3Ar5ATnLMcnRTtg7/f800/1649507870.jpeg?s=b1616fd9df9a9eef397c8458c71981e886927448"
-        }'></item_frame>
-            <item_frame class="item" :item='{
-            name: "Hoodie Zip Violet",
-            size: "M",
-            price: "20,00 €",
-            brand: "CARHARTT",
-            link: "https://www.vinted.fr/hommes/vetements/sweats-and-pulls/pulls-a-capuche-avec-zip/1743748226-sweat-zip-carahartt",
-            imageUrl: "https://images1.vinted.net/t/03_0256f_8WeQmpNc3Ar5ATnLMcnRTtg7/f800/1649507870.jpeg?s=b1616fd9df9a9eef397c8458c71981e886927448"
-        }'></item_frame>
-        </ul>
-    </div>
-
+    <header_bloc></header_bloc>
+    <menu_bloc></menu_bloc>
 </template>
-
 <script>
-import header_bloc from '@/components/header_bloc.vue'
-import articles_banner from '@/components/articles_banner.vue'
-import item_frame from "@/components/item_frame";
+import header_bloc from '@/components/header_bloc.vue';
+import menu_bloc from '@/components/menu_bloc.vue';
+//import articles_banner from '@/components/articles_banner.vue';
+//import item_frame from "@/components/item_frame";
 
 export default {
     name: 'App',
     components: {
         header_bloc,
-        articles_banner,
-        item_frame
+        menu_bloc
+        //articles_banner,
+        //item_frame
     }
 }
 </script>
 
 <style>
 
-#app, html {
+#app, html, body {
     margin:0;
     padding:0;
     width: 100%;
@@ -67,13 +29,13 @@ export default {
     font-family: 'Montserrat',sans-serif;
 }
 
-#items_scroll {
+.items_scroll {
     display: grid;
     grid-gap: 15px;
     align-content: start;
 }
 
-#items_scroll > .scrolling {
+.items_scroll > .scrolling {
     grid-column: 2 / -2;
 }
 
@@ -117,20 +79,8 @@ export default {
     width: 100%
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* {
+    box-sizing: border-box !important;
+}
 
 </style>

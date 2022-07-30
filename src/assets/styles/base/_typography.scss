@@ -1,0 +1,20 @@
+@use "sass:map";
+@import "../helpers/_variables.scss";
+
+* {
+  font-style: map.get($typography_styles, "main_style");
+  font-weight: map.get($typography_styles, "main_weight");
+  font-size: map.get($typography_styles, "main_size");
+  line-height: map.get($typography_styles, "main_line-height");
+  color: map.get($typography_styles, "main_color");
+}
+
+// _header
+.header_bloc {
+  h1 {
+    font-style: map.get($header_title, "main_style");
+    font-weight: map.get($header_title, "main_weight");
+    font-size: map.get($header_title, "main_size");
+    line-height: map.get($header_title, "main_line-height");
+  }
+}

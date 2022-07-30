@@ -1,0 +1,7 @@
+@mixin content_box($width, $height, $padding, $direction) {
+    width: $width;
+    height: $height;
+    padding: $padding;
+    display: flex;
+    flex-direction: $direction;
+}
