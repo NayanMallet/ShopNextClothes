@@ -1,8 +1,50 @@
-@import "../helpers/_mixins.scss";
-@import "../helpers/_variables.scss";
-
+// _header
 .nav_menu {
-  @include content_box($width: 100%, $height: 25px, $padding: 0, $direction: row);
+  @include content_box(100%, 25px, 0, row);
   justify-content: space-between;
   align-items: center;
-}
+
+  svg {
+    width: $nav-btn-size;
+    height: $nav-btn-size;
+    @include hover_shadow();
+  };
+};
+
+
+// _menu
+.menu_bloc {
+  @include content_box(100%, 75%, 30px, column);
+  align-content: space-between;
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  display: none;
+
+  svg {
+    width: $nav-btn-size;
+    height: $nav-btn-size;
+    @include hover_shadow();
+  };
+
+  .menu_top {
+    @include content_box(100%, fit-content, 0, row);
+    justify-content: space-between;
+    // align-items: flex-start;
+    place-items: flex-start;
+  };
+
+  .menu_nav {
+    @include content_box(fit-content, fit-content, 0, column);
+    //align-items: flex-end;
+    place-items: flex-end;
+    margin-left: auto;
+    a {
+      @include hover_shadow();
+      text-decoration: none;
+    };
+  };
+};

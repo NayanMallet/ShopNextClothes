@@ -1,25 +1,72 @@
-// _typography
-$typography_styles : (
+//color
+$clr-primary: #FFFFFF !default;
+
+
+//font-family
+$ff-primary: 'Montserrat', sans-serif !default;
+
+//font-size
+$fs-body: 25 !default;
+$fs-header: 30 !default;
+
+//line-height
+$lh-body: 23 !default;
+$lh-header: 24 !default;
+
+//font-weight
+$fw-light: 300;
+$fw-regular: 400;
+$fw-semi-bold: 500;
+$fw-bold: 700;
+
+
+
+$clr-accent-500: hsl(12, 60%, 45%);
+$clr-accent-400: hsl(12, 88%, 59%);
+$clr-accent-300: hsl(12, 88%, 75%);
+$clr-accent-100: hsl(13, 100%, 96%);
+
+$clr-neutral-900: hsl(232, 12%, 13%);
+$clr-neutral-100: hsl(0, 0%, 100%);
+
+/*
+@media (min-width: 50em) {
+  $fs-body: $fs-500;
+  $fs-primary-heading: $fs-900;
+  $fs-secondary-heading: $fs-800;
+
+  $fs-nav: $fs-300;
+}
+*/
+
+$size-100: 0.25rem;
+$size-200: 0.5rem;
+$size-300: 0.75rem;
+$size-400: 1rem;
+$size-500: 1.25rem;
+$size-600: 2rem;
+$size-700: 3rem;
+$size-800: 4rem;
+$size-900: 5rem;
+
+
+// _header
+$header-bg-url: "/Users/nayanmallet/Documents/Dev/shopnextclothes_/src/assets/images/header_background.jpeg" !default;
+
+//_navigation
+$nav-btn-size: 40px !default;
+
+// _header
+
+$menu-bg: #4F4E4E !default;
+
+
+
+
+/* $typo-styles: (
         "main_style": normal ,
         "main_weight": 600,
         "main_size": 25px,
         "main_line-height": 23px,
         "main_color": #FFFFFF
-);
-
-// _theme
-$background_img: "/Users/nayanmallet/Documents/Dev/shopnextclothes_/src/assets/images/header_background.jpeg" !default;
-
-//_navigation
-$buttons_sizing: 40px !default;
-
-// _header
-$header_title : (
-        "main_style": bold ,
-        "main_weight": 600,
-        "main_size": 30px,
-        "main_line-height": 24px,
-        "main_color": #FFFFFF,
-        "main_width": 98px,
-        "main_height": 75px
-);
+);*/

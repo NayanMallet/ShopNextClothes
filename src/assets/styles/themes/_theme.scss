@@ -1,10 +1,12 @@
-@import "../helpers/_variables.scss";
-
 // _header
 .header_bloc {
   background: {
-    image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url($background_img);
+    image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url($header-bg-url);
     size: cover;
     position: center;
   }
+}
+
+.menu_bloc {
+  background: $menu-bg;
 }
