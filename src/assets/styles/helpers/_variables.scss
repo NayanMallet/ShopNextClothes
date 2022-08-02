@@ -1,5 +1,6 @@
 //color
 $clr-primary: #FFFFFF !default;
+$clr-mid-banner: #F9F6F6 !default;
 
 
 //font-family
@@ -21,13 +22,7 @@ $fw-bold: 700;
 
 
 
-$clr-accent-500: hsl(12, 60%, 45%);
-$clr-accent-400: hsl(12, 88%, 59%);
-$clr-accent-300: hsl(12, 88%, 75%);
-$clr-accent-100: hsl(13, 100%, 96%);
 
-$clr-neutral-900: hsl(232, 12%, 13%);
-$clr-neutral-100: hsl(0, 0%, 100%);
 
 /*
 @media (min-width: 50em) {
@@ -57,16 +52,7 @@ $header-bg-url: "/Users/nayanmallet/Documents/Dev/shopnextclothes_/src/assets/im
 $nav-btn-size: 40px !default;
 
 // _header
-
 $menu-bg: #4F4E4E !default;
+$h1-width: 33% !default;
 
 
-
-
-/* $typo-styles: (
-        "main_style": normal ,
-        "main_weight": 600,
-        "main_size": 25px,
-        "main_line-height": 23px,
-        "main_color": #FFFFFF
-);*/

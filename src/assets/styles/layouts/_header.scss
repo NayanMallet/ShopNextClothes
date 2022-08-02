@@ -1,6 +1,8 @@
 .header_bloc {
   @include content_box(100%, 260px, 30px, column);
-
   align-items: center;
 
+  @include mq(small, "max-width") {
+    $h1-width: toRem(92);
+  };
 };

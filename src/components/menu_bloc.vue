@@ -18,10 +18,10 @@ export default {
     name: "menu_bloc",
     methods: {
         closeMenu: function () {
-            if (document.querySelector(".menu_bloc").style.display === "block") {
+            if (document.querySelector(".menu_bloc").style.display === "inline-flex") {
                 document.querySelector(".menu_bloc").style.display="none";
             } else {
-                document.querySelector(".menu_bloc").style.display="block";
+                document.querySelector(".menu_bloc").style.display="inline-flex";
             }
         }
     }

@@ -1,0 +1,5 @@
+.mid_banner {
+  @include content_box(100%, 48px, 0, initial);
+  align-items: center;
+  justify-content: center;
+};

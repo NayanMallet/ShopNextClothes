@@ -20,9 +20,9 @@
                     bold
     );
 
-    width: 33%;
+    width: $h1-width;
     height: fit-content;
-    margin: auto;
+    margin: auto 0;
   };
 };
 
@@ -36,7 +36,21 @@
                     bold
     );
 
-    width: 33%;
+    width: $h1-width;
+    height: fit-content;
+  };
+};
+
+.mid_banner {
+  h1 {
+    @include typo_styles(
+                    $fw-semi-bold, //fw
+                    10, //fs
+                    #000000, //clr
+                    15, //lh
+                    normal
+    );
+    width: fit-content;
     height: fit-content;
   };
 };

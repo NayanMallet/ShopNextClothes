@@ -15,14 +15,14 @@
 // _menu
 .menu_bloc {
   @include content_box(100%, 75%, 30px, column);
-  align-content: space-between;
   position: absolute;
+  align-content: space-between;
 
   top: 0;
   left: 0;
   right: 0;
 
-  display: none;
+  display:  none;
 
   svg {
     width: $nav-btn-size;
@@ -33,15 +33,13 @@
   .menu_top {
     @include content_box(100%, fit-content, 0, row);
     justify-content: space-between;
-    // align-items: flex-start;
     place-items: flex-start;
   };
 
   .menu_nav {
     @include content_box(fit-content, fit-content, 0, column);
-    //align-items: flex-end;
     place-items: flex-end;
-    margin-left: auto;
+    margin: auto 0 0 auto;
     a {
       @include hover_shadow();
       text-decoration: none;
