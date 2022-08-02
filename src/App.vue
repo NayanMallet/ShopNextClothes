@@ -14,8 +14,8 @@ export default {
     components: {
         header_bloc,
         menu_bloc,
-        mid_banner
-        //item_frame
+        mid_banner,
+        // item_frame
     }
 }
 </script>
