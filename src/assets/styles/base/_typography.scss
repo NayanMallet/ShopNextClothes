@@ -94,3 +94,46 @@
     height: fit-content;
   };
 };
+
+.item_frame {
+  .item_name {
+    @include typo_styles(
+                    $fw-bold, //fw
+                    $fs-item, //fs
+                    #FFFFFF, //clr
+                    $lh-item, //lh
+                    normal
+    );
+  };
+
+  .item_size {
+    @include typo_styles(
+                    $fw-regular, //fw
+                    13, //fs
+                    #FFFFFF, //clr
+                    16, //lh
+                    normal
+    );
+  };
+
+  .item_brand {
+    @include typo_styles(
+                    $fw-light, //fw
+                    13, //fs
+                    #FFFFFF, //clr
+                    16, //lh
+                    normal
+    );
+  };
+
+  .item_price {
+    @include typo_styles(
+                    $fw-bold, //fw
+                    13, //fs
+                    #FFFFFF, //clr
+                    16, //lh
+                    normal
+    );
+  };
+};
+

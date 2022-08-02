@@ -1,0 +1,31 @@
+.item_frame {
+  @include content_box(280px, 440px, 25px, column);
+  border-radius: 30px;
+  justify-content: flex-end;
+
+  .texts_box {
+    @include content_box(100%, fit-content, 0, column);
+
+    .top_part {
+      @include content_box(100%, 80px, 0, row);
+      justify-content: space-between;
+      padding-bottom: 5px;
+
+      .size_box {
+        @include content_box(fit-content, 22px, 0, row);
+        background: black;
+
+        svg {
+          width: 5px;
+          height: 9px;
+          padding-bottom: 2px;
+        };
+      };
+    };
+
+    .bottom_part {
+      @include content_box(100%, 20px, 0, row);
+      justify-content: space-between;
+    };
+  };
+};
