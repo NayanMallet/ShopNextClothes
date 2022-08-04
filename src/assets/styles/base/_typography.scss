@@ -137,3 +137,22 @@
   };
 };
 
+.sc_header {
+
+  .sc_box {
+
+    .search_input {
+      text-transform: lowercase;
+      text-align: center;
+
+      @include typo_styles(
+                      $fw-regular, //fw
+                      20, //fs
+                      rgba(255, 255, 255, 0.8), //clr
+                      19, //lh
+                      normal
+      );
+
+  };
+};
+};

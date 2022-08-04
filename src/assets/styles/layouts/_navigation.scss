@@ -46,3 +46,46 @@
     };
   };
 };
+
+.search_tab {
+  @include content_box(100%, 100%, 30px, column);
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  display: none;
+
+  svg {
+    width: $nav-btn-size;
+    height: $nav-btn-size;
+  };
+
+  .sc_header {
+    @include content_box(100%, 5%, 0, column);
+
+    .sc_box {
+      @include content_box(100%, 100%, 0, row);
+
+      .search_input {
+        width: 75%;
+        border: none;
+        margin: 0 calc(12.5% - 40px) 0 12.5%;
+      };
+    };
+
+    hr {
+      width: 75%;
+      border: 2px solid #FFFFFF;
+      margin: 0 auto;
+    };
+  };
+
+  .sc_body {
+    @include content_box(100%, calc(95% - 40px), 0, column);
+  };
+
+  .close_button {
+    @include hover_shadow(#FFFFFF);
+    margin: 0 auto;
+  };
+};
