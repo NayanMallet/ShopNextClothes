@@ -1,7 +1,8 @@
 .scroll_grid {
-  width: 95%;
+  width: 100%;
   height: fit-content;
   padding: 5%;
+  margin: 0 auto;
 
   display: grid ;
   align-items: center ;
@@ -11,12 +12,11 @@
   grid-template-rows: unset;
   overflow: scroll;
 
-  background: gray;
-
+  column-gap: 30px;
   &:before, &:after {
-    position: static;
+    position: absolute;
     content: '';
-    width: 30px;
+    //width: 30px;
   }
   .item {
 
